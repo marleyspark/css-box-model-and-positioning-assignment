@@ -1,8 +1,5 @@
 # CSS Box Modal and Positioning Assignment
 
-## Instructions
+## Transform Your Resume Into Website
 
-You are to create a webpage from scratch.
-
-1. Fork this repository.
-2. Refer to folder 'expected-result' for the end goal.
+Before you begin this programme, you were asked to work on a pre-course project that transforms your resume into a web page. You are to apply what you have learned in this lesson to improve on the same website.
