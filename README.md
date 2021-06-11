@@ -1,5 +1,12 @@
-# CSS Box Modal and Positioning Assignment
+[<img src="assets/images/su-logo.png" alt="Skills Union Logo" height="80px" />](https://www.skillsunion.com/)
 
-## Transform Your Resume Into Website
+# CSS Box Model & Positioning: Assignment
 
-Before you begin this programme, you were asked to work on a pre-course project that transforms your resume into a web page. You are to apply what you have learned in this lesson to improve on the same website.
+## Instructions
+
+1. Fork and clone this repository
+2. Change into the new directory
+3. Create and checkout a new branch named `assignment`
+4. Follow the instructions provided in the [index.html](./index.html) page
+5. When you are done, commit, push to your fork and submit a pull request
+6. Make sure to submit your pull request at least an hour before class
