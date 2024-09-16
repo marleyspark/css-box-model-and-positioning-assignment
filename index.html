@@ -1,53 +1,121 @@
 <html>
-  <head>
-    <style>
-      /*
-        1. Apply css styles to navigation bar so that it stays
-        at the top of the page even as the user scrolls down.
-
-        2. Make the navigation list items inline
-
-        3. Beautify the Phone Book Entry from using CSS Box model properties
-        and some extra visual flare using any CSS properties you desire.
-        
-        4. Add a footer to the page that stays at the very end of the page.
-        The user should not see it unless they scroll to the very end
-        */
-    </style>
-  </head>
-  <body>
-    <nav>
-      <ul>
-        <li><a href="https://en.wikipedia.org/wiki/Telephone_directory">Telephone directory</a></li>
-        <li><a href="https://upload.wikimedia.org/wikipedia/commons/0/02/MichYellowBooks.JPG">Yellow phonebook</a></li>
-        <li><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Hitachi-phone_and_phonebook.jpg/640px-Hitachi-phone_and_phonebook.jpgs">Phone and book</a></li>
-      </ul>
-    </nav>
-    <div height="200vh">
-    <h1>Phone Book Entry</h1>
-    <form>
-      <!-- First Name -->
-      <label for="tb-first-name">First Name</label>
-      <input type="text" id="tb-first-name" />
-
-      <!-- Last Name-->
-      <label for="tb-last-name">Last Name</label>
-      <input type="text" id="tb-last-name" />
-
-      <!-- Phone Number -->
-      <label>Phone Number</label><input type="number" id="tb-phone-number" />
-      <input type="radio" id="rb-phone-type-work" name="phone-type" /><label
-        for="rb-phone-type-work"
-        >Work</label
-      >
-      <input type="radio" id="rb-phone-type-personal" name="phone-type" /><label
-        for="rb-phone-type-personal"
-        >Personal</label
-      >
-
-      <!-- Submit button -->
-      <input type="button" value="Submit" />
-    </form>
-  </div>
-  </body>
+   <head>
+      <link rel="stylesheet" href="style.css" />
+      <style>
+         .navbar {
+         font-family: "Courier New";
+         position: sticky;
+         border: dotted black 5px;
+         text-align: center;
+         top: 0;
+         }
+         .footer {
+         border: solid black 1px;
+         font-family: "Courier New";
+         position: absolute;
+         bottom: 0px;
+         left: 0px;
+         width: 100%;
+         text-align: center;
+         background-color: lightblue;
+         }
+         .li {
+         display: inline;
+         }
+         .nav {
+         display: inline;
+         }
+         .list {
+         display: inline;
+         list-style-type: square;
+         align-content: center;
+         padding: 20px;
+         }
+         .flname {
+         font-family: "Courier New";
+         }
+         .phonenum {
+         font-family: "Courier New";
+         bottom: 5px;
+         }
+         .submit {
+         background-color: blue;
+         border: none;
+         color: white;
+         padding: 10px 10px 10px 10px;
+         text-align: center;
+         display: inline-block;
+         font-size: 16px;
+         }
+         .submit {
+         transition-duration: 0.4s;
+         }
+         .submit:hover {
+         background-color: #4caf50; /* Green */
+         color: white;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="navbar">
+         <nav>
+            <ul>
+               <li class="list">
+                  <a href="https://en.wikipedia.org/wiki/Telephone_directory"
+                     >Telephone directory</a
+                     >
+               </li>
+               <li class="list">
+                  <a
+                     href="https://upload.wikimedia.org/wikipedia/commons/0/02/MichYellowBooks.JPG"
+                     >Yellow phonebook</a
+                     >
+               </li>
+               <li class="list">
+                  <a
+                     href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Hitachi-phone_and_phonebook.jpg/640px-Hitachi-phone_and_phonebook.jpgs"
+                     >Phone and book</a
+                     >
+               </li>
+            </ul>
+         </nav>
+      </div>
+      <div height="200vh">
+         <h1>Phone Book Entry</h1>
+      </div>
+      <br>
+      <form>
+         <div class="flname">
+            <!-- First Name -->
+            <label for="tb-first-name">First Name</label>
+            <input type="text" id="tb-first-name" />
+         </div>
+         <div class="flname">
+            <!-- Last Name-->
+            <label for="tb-last-name">Last Name</label>
+            <input type="text" id="tb-last-name" />
+         </div>
+         <br>  
+         <div class="phonenum">
+            <!-- Phone Number -->
+            <label>Phone Number</label><input type="number" id="tb-phone-number" />
+            <input type="radio" id="rb-phone-type-work" name="phone-type" /><label
+               for="rb-phone-type-work"
+               >Work</label
+               >
+            <input
+               type="radio"
+               id="rb-phone-type-personal"
+               name="phone-type"
+               /><label for="rb-phone-type-personal">Personal</label>
+         </div>
+         <!-- Submit button -->
+         <input type="button" class="submit" value="Submit" />
+      </form>
+      </div>
+      <footer class="footer">
+         <p>Phone Book Entry</p>
+      </footer>
+   </body>
 </html>
+
